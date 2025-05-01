@@ -10,7 +10,7 @@
   <nav class="navbar">
     <div class="navbar-top">
         
-        <div class="container">
+        <div class="container2">
       <div class="left-icons">
         <i class="fas fa-search">
             <img src="images/search.png" alt="" width="20" class="search">
@@ -40,23 +40,244 @@
     </div>
    
    
-
-
-  </nav>  
-  <section class="hero-section">
-    <div class="hero-text">
-      <h1>REACH YOUR <br> BEST</h1>
-      <p>
-        Welcome to <span>FuelFlex</span> — your ultimate destination for <span>Powerful workouts</span> and <span>clean nutrition</span>.
-        Whether you're here to build muscle, shed fat, or simply feel better in your body, we've got the tools, programs, and meals to help you thrive.
-        Train smarter, eat cleaner, and unlock your full potential — all in one place.
-      </p>
+    <div class="navbar-bottom">
+        
+               
+     
+      <a href="#sec1">BMI</a>
+      <a href="#sec2">Programs</a>
+      <a href="#sec4">Our Products</a>
       
-      <a href="https://ahmedfareed88.github.io/Main2/" class="btn" style=" text-decoration: none;">Get Started</a>
+
+      <a href="#sec6">Events</a>
+      
     </div>
-    <div class="hero-image">
-      <img src="images/Screenshot 2025-04-12 162421.png" alt="Weights Gym" width="500">
+
+  </nav> 
+  <section class="sec2" id="sec1">
+    <h2 class="prog">BMI</h2>
+      </section> 
+  <div class="container3" id="bmi">
+    <h2>BMI Calculator</h2>
+  
+    <label>Age</label>
+    <input type="number" id="age" placeholder="Enter your age" min="2" max="120"/>
+  
+    <label>Gender</label>
+    <div class="gender">
+      <label><input type="radio" name="gender" value="male" checked /> Male</label>
+      <label><input type="radio" name="gender" value="female" /> Female</label>
     </div>
-  </section> 
+  
+    <label>Height (cm)</label>
+    <input type="number" id="height" placeholder="Enter your height in cm" />
+  
+    <label>Weight (kg)</label>
+    <input type="number" id="weight" placeholder="Enter your weight in kg" />
+  
+    <button onclick="calculateBMI()">Calculate</button>
+  
+    <div class="result" id="bmiValue"></div>
+    <div class="bmi-status" id="bmiStatus"></div>
+  </div>
+  <hr style="margin-top: 50px;">
+  <section class="sec2" id="sec2">
+<h2 class="prog">Programs</h2>
+  </section>
+  <div class="container4">
+    <div class="box underweight">
+      <img src="images/3.jpg" alt="Underweight Image" class="jjkk">
+      <h2>Underweight</h2>
+             <a href="https://ahmedfareed88.github.io/underweight/" target="_blank" class="mewo">More Details</a>
+
+    </div>
+    <div class="box normal">
+      <img src="images/2.webp" alt="Normal Image" class="jjkk">
+      <h2>Normal</h2>
+   
+        <a href="https://ahmedfareed88.github.io/normal/" target="_blank" class="mewo">More Details</a>
+      
+    </div>
+    <div class="box overweight">
+      <img src="images/4.jpg" alt="Overweight Image" class="jjkk">
+      <h2>Overweight</h2>
+      <a href="https://ahmedfareed88.github.io/overweight/" target="_blank" class="mewo2">More Details</a>
+
+    </div>
+    <div class="box obese">
+      <img src="images/1.webp" alt="Obese Image" class="jjkk">
+      <h2>Obese</h2>
+      <a href="https://ahmedfareed88.github.io/obese/" target="_blank" class="mewo">More Details</a>
+
+    </div>
+  </div>
+  <section class="sec4" id="sec4">
+    <h2 class="prog">Our Products</h2>
+      </section>   
+      <section class="products-section">
+        <h2>Our Products</h2>
+        <div class="products-container" id="productsContainer">
+          <!-- منتجات افتراضية -->
+          <div class="product-card">
+            <img src="images/ww.jpg" alt="Product 1">
+            <h3>Sensitive Balance</h3>
+            <p>120EG</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/whey1.jpg" alt="Product 2" class="Whey">
+            <h3>Whey Protine</h3>
+            <p>5900EG</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div> <div class="product-card">
+            <img src="images/CR.jpg" alt="Product 2" class="Whey">
+            <h3>Creatine</h3>
+            <p>1500EG</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div> <div class="product-card">
+            <img src="images/omega.jpg" alt="Product 2" class="Whey">
+            <h3>Omega 3</h3>
+            <p>250EG</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div> <div class="product-card">
+            <img src="images/cen.jpg" alt="Product 2" class="Whey">
+            <h3>Centrum</h3>
+            <p>260EG</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/zinc.jpg" alt="Product 2" class="Whey">
+            <h3>Zink</h3>
+            <p>700EG</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/dd.jpg" alt="Product 2" class="Whey">
+            <h3>Vitamin D</h3>
+            <p>400EG</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img src="images/bb.jpg" alt="Product 2" class="Whey">
+            <h3>B-12</h3>
+            <p>300EG</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Cart Section -->
+      <section class="cart-section">
+        <h2>Your Cart (<span id="cartCount">0</span>)</h2>
+        <div class="cart-items" id="cartItems">
+          <!-- العناصر تضاف هنا -->
+        </div>
+        
+        <!-- Confirm Order Button -->
+<div style="text-align: center; margin-top: 20px;">
+  <button id="confirmOrderBtn">Confirm Order</button>
+  <hr>
+</div>
+<section class="sec6" id="sec6">
+  <h2 class="prog">Events</h2>
+    </section>
+    <div class="event-box">
+      <img src="/images/dejd.jpg" alt="Event Image" class="event-image">
+      <div class="event-content">
+        <h2 class="event-title">New Cairo 3 (11/5/2025)</h2>
+        <p class="event-description">You can go there even if you are 0 level and you want to level up</p>
+        <a href="event-details.html" class="event-button">For more details</a>
+      </div>
+    </div>
+  <script>
+    
+    function calculateBMI() {
+      const height = parseFloat(document.getElementById("height").value);
+      const weight = parseFloat(document.getElementById("weight").value);
+      const age = parseInt(document.getElementById("age").value);
+      const statusBox = document.getElementById("bmiStatus");
+      const resultBox = document.getElementById("bmiValue");
+  
+      if (!height || !weight || !age || height <= 0 || weight <= 0 || age < 2) {
+        resultBox.innerHTML = "Please enter valid data.";
+        statusBox.innerHTML = "";
+        statusBox.className = "bmi-status";
+        return;
+      }
+  
+      const bmi = weight / ((height / 100) ** 2);
+      let category = "";
+      let className = "";
+  
+      if (bmi < 18.5) {
+        category = "Underweight";
+        className = "underweight";
+      } else if (bmi < 25) {
+        category = "Normal";
+        className = "normal";
+      } else if (bmi < 30) {
+        category = "Overweight";
+        className = "overweight";
+      } else {
+        category = "Obese";
+        className = "obese";
+      }
+  
+      resultBox.innerHTML = `Your BMI is <strong>${bmi.toFixed(1)}</strong>`;
+      statusBox.innerHTML = `Category: ${category}`;
+      statusBox.className = `bmi-status ${className}`;
+    }
+    const cartItemsContainer = document.getElementById("cartItems");
+const cartCount = document.getElementById("cartCount");
+const addToCartButtons = document.querySelectorAll(".add-to-cart");
+
+let cart = [];
+
+addToCartButtons.forEach(button => {
+  button.addEventListener("click", (e) => {
+    const productCard = e.target.closest(".product-card");
+    const name = productCard.querySelector("h3").textContent;
+    const price = productCard.querySelector("p").textContent;
+    const image = productCard.querySelector("img").src;
+
+    const product = { name, price, image };
+    cart.push(product);
+    renderCart();
+  });
+});
+
+function renderCart() {
+  cartItemsContainer.innerHTML = "";
+  cart.forEach((item, index) => {
+    const div = document.createElement("div");
+    div.classList.add("cart-item");
+    div.innerHTML = `
+      <img src="${item.image}" alt="${item.name}">
+      <h3>${item.name}</h3>
+      <p>${item.price}</p>
+      <button onclick="removeFromCart(${index})">Remove</button>
+    `;
+    cartItemsContainer.appendChild(div);
+  });
+
+  cartCount.textContent = cart.length;
+}
+
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  renderCart();
+}
+const confirmOrderBtn = document.getElementById("confirmOrderBtn");
+
+confirmOrderBtn.addEventListener("click", () => {
+  if (cart.length === 0) {
+    alert("Your cart is empty!");
+  } else {
+    alert("Order confirmed! Thank you for your purchase.");
+    cart = [];
+    renderCart();
+  }
+});
+  </script>
 </body>
 </html>
