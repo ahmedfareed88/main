@@ -1,509 +1,226 @@
-  body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    
-      background-color: #f2f2f2;
-    }
-    html{
-      scroll-behavior: smooth;
-    }
-    
-    .navbar {
-      background-color: #2f2f2f;
-      color: white;
-      padding: 10px 20px;
-      margin-top: -28px;
-    }
-    
-    .navbar-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .left-icons i,
-    .right-icons i {
-      margin: 0 8px;
-      cursor: pointer;
-      color: white;
-    }
-    
-
-    
-    .logo img {
-      width: 120px;
-      height: auto;
-    }
-    
-    .right-icons {
-      display: flex;
-      align-items: center;
-    }
-    
-    .contact-btn {
-      margin-left: 10px;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 25px;
-      background-color: white;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    
-    .contact-btn:hover {
-      background-color: #ddd;
-    }
-    
-    .navbar-bottom {
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-      background-color: #2f2f2f;
-      align-items: center;
-    }
-    
-    .navbar-bottom a {
-      margin: 0 12px;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      position: relative;
-    }
-    
-
-    
-    .dropdown {
-      position: relative;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #444;
-      top: 100%;
-      left: 0;
-      min-width: 100px;
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      color: white;
-      padding: 8px 12px;
-      display: block;
-    }
-    
-    .dropdown-content a:hover {
-      background-color: #666;
-    }
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .navbar-bottom a {
-      position: relative;
-      margin: 0 12px;
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      padding: 4px 0;
-      transition: color 0.3s;
-    }
-    
-    .navbar-bottom a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 0;
-      height: 2px;
-      background-color: white;
-      transition: width 0.3s ease;
-    }
-    
-    .navbar-bottom a:hover::after {
-      width: 100%;
-    }
-    
-    .navbar-bottom a:hover {
-      color: #ffffff;
-    }
-    .search{
-      background-color: #4c4b4f;
-      padding: 10px;
-      border-radius: 50px;
-    }
-      .container2{
-          display: flex;
-    align-items: center;
-
-    
-      }
-      .left-icons {
-          display: flex;
-          align-items: center; /* يخلي العناصر متوسطة عموديًا */
-
-        }
-        
-        .left-icons i img {
-          display: block;
-          height: auto;
-        }
-        
-        .phone {
-          color: white; /* حسب لون الخلفية عندك */
-          font-size: 15px;
-        }
-        
-        .logo{
-  margin-right: 250px;
-        }
-        .hero-section {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10px 10%;
-          min-height: 70vh;
-        }
-    
-        .hero-text {
-          flex: 1;
-        }
-    
-        .hero-text h1 {
-          font-size: 3rem;
-          line-height: 1.2;
-          margin-bottom: 20px;
-          letter-spacing: 2px;
-        }
-    
-        .hero-text p {
-          font-size: 1.1rem;
-          margin-bottom: 30px;
-          color: #555;
-        }
-    
-        .hero-text p span {
-          font-weight: bold;
-          color: #111;
-        }
-    
-        .hero-text .btn {
-          padding: 12px 30px;
-          background-color: #222;
-          color: #fff;
-          border: none;
-          border-radius: 30px;
-          cursor: pointer;
-          font-size: 1rem;
-          transition: background-color 0.3s ease;
-        }
-    
-        .hero-text .btn:hover {
-          background-color: #ff4d4d;
-        }
-    
-        .hero-image {
-          flex: 1;
-          display: flex;
-          justify-content: center;
-        }
-    
-        .hero-image img {
-          max-width: 90%;
-          border-radius: 10px;
-        }
-    
-        @media (max-width: 768px) {
-          .hero-section {
-            flex-direction: column;
-            text-align: center;
-          }
-    
-          .hero-image {
-            margin-top: 30px;
-          }
-        }
-        .container3 {
-          background: white;
-          padding: 30px;
-          border-radius: 15px;
-          width: 90%;
-          max-width: 500px;
-          box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          justify-self: center;
-          margin-top: 50px;
-        }
-    
-        h2 {
-          text-align: center;
-          margin-bottom: 20px;
-          color: #2c3e50;
-        }
-    
-        label {
-          font-weight: bold;
-          display: block;
-          margin-top: 10px;
-        }
-    
-        input[type="number"] {
-          width: 100%;
-          padding: 10px;
-          margin-top: 5px;
-          border-radius: 8px;
-          border: 1px solid #ccc;
-          margin-bottom: 10px;
-        }
-    
-        .gender {
-          display: flex;
-          gap: 20px;
-          margin-top: 5px;
-        }
-    
-        .gender label {
-          font-weight: normal;
-        }
-    
-        button {
-          width: 100%;
-          padding: 12px;
-          background: #27ae60;
-          border: none;
-          color: white;
-          font-size: 1rem;
-          border-radius: 10px;
-          cursor: pointer;
-          margin-top: 10px;
-        }
-    
-        button:hover {
-          background: #219150;
-        }
-    
-        .result {
-          margin-top: 20px;
-          text-align: center;
-          font-size: 1.2rem;
-          font-weight: bold;
-        }
-    
-        .bmi-status {
-          margin-top: 10px;
-          padding: 10px;
-          border-radius: 8px;
-          color: white;
-        }
-    
-        .underweight { background-color: #e74c3c; }
-        .normal { background-color: #27ae60; }
-        .overweight { background-color: #f1c40f; color: #222; }
-        .obese { background-color: #c0392b; }
-        .prog{
-          font-size: 40px;
-        }.container {
-          display: flex;
-          flex-direction: row;
-          height: 100vh;
-        }
-        
-        .box {
-          flex: 1;
-          text-align: center;
-          padding: 40px 20px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        
-      
-        
-        .box h2 {
-          font-size: 24px;
-          font-weight: bold;
-          margin-bottom: 20px;
-          color: #fff;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+   
+    background-color: #f2f2f2;
+  }
   
-        }
-        
-        .box button {
-          background-color: #333;
-          color: white;
-          border: none;
-          padding: 10px 30px;
-          border-radius: 999px;
-          font-size: 16px;
-          cursor: pointer;
-          transition: 0.3s;
-        }
-        
-        .box button:hover {
-          background-color: #555;
-        }
-        
-        /* Background colors for each box */
-        .underweight {
-          background-color: white;
-        }
-        
-        .underweight h2 {
-          color: black;
-        }
-        
-        .normal {
-          background-color: #999;
-        }
-        
-        .overweight {
-          background-color: #333;
-        }
-        
-        .obese {
-          background-color: #1a1a1a;
-        }
-        .btm2{
-          color: black !important;
-          background-color: white !important;
-        }
-        .jjkk{
-          width: 450px;
-          border-radius: 15px;
-        }
-      .container4{
+  .navbar {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 10px 20px;
+    margin-top: -28px;
+    height: 100px;
+  }
+  
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-icons i,
+  .right-icons i {
+    margin: 0 8px;
+    cursor: pointer;
+    color: white;
+  }
+  
+
+  
+  .logo img {
+    width: 120px;
+    height: auto;
+  }
+  
+  .right-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-btn {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .contact-btn:hover {
+    background-color: #ddd;
+  }
+  
+  .navbar-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #2f2f2f;
+    align-items: center;
+  }
+  
+  .navbar-bottom a {
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+  }
+  
+
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    top: 100%;
+    left: 0;
+    min-width: 100px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 8px 12px;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #666;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .navbar-bottom a {
+    position: relative;
+    margin: 0 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 4px 0;
+    transition: color 0.3s;
+  }
+  
+  .navbar-bottom a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-bottom a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-bottom a:hover {
+    color: #ffffff;
+  }
+  .search{
+    background-color: #4c4b4f;
+    padding: 10px;
+    border-radius: 50px;
+  }
+    .container{
         display: flex;
-        flex-wrap: wrap;
-      }
-    
-      .products-container, .cart-items {
+  align-items: center;
+
+  
+    }
+    .left-icons {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
+        align-items: center; /* يخلي العناصر متوسطة عموديًا */
+
       }
       
-      .product-card, .cart-item {
-        background: white;
-        padding: 15px;
-        border-radius: 12px;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        width: 220px;
-        text-align: center;
+      .left-icons i img {
+        display: block;
+        height: auto;
       }
       
-      .product-card img, .cart-item img {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-        border-radius: 10px;
+      .phone {
+        color: white; /* حسب لون الخلفية عندك */
+        font-size: 15px;
       }
       
-      button {
-        background: #007bff;
-        color: white;
-        padding: 8px 15px;
-        border: none;
-        border-radius: 20px;
-        margin-top: 10px;
-        cursor: pointer;
-        transition: background 0.3s ease;
+      .logo{
+margin-right: 250px;
       }
-      
-      button:hover {
-        background: #0056b3;
-      }
-      
-      .cart-item button {
-        background: crimson;
-      }
-      #confirmOrderBtn{
-        width: 155px;
-      }
-      .Whey{
-        width: 100px !important;
-      }
-      .mewo{
-        text-decoration: none;
-        color: white;
-        background: #333;
-        color: white;
-        padding: 8px 15px;
-        border: none;
-        border-radius: 20px;
-        margin-top: 10px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        width: 550px;
-      }
-      .mewo:hover{
-        background-color: #666;
-      }
-      .mewo2{
-        text-decoration: none;
-        color: black !important;
-        background: white;
-        color: white;
-        padding: 8px 15px;
-        border: none;
-        border-radius: 20px;
-        margin-top: 10px;
-        cursor: pointer;
-        transition: background 0.3s ease;
-        width: 550px;
-      }
-      .event-box {
-        width: 300px;
-        border: 1px solid #ccc;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        font-family: Arial, sans-serif;
-        background-color: #fff;
-        margin-bottom: 50px;
-        justify-self: center;
-      }
-      
-      .event-image {
-        width: 100%;
-        height: 180px;
-        object-fit: cover;
-      }
-      
-      .event-content {
-        padding: 15px;
+      .hero-section {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-items: center;
+        padding: 10px 10%;
+        min-height: 70vh;
       }
-      
-      .event-title {
-        margin: 0 0 10px;
-        font-size: 20px;
-        color: #333;
+  
+      .hero-text {
+        flex: 1;
       }
-      
-      .event-description {
-        margin: 0;
-        font-size: 14px;
+  
+      .hero-text h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+      }
+  
+      .hero-text p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
         color: #555;
       }
-      .event-button {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 8px;
+  
+      .hero-text p span {
         font-weight: bold;
-        transition: background-color 0.3s;
+        color: #111;
       }
-      
-      .event-button:hover {
-        background-color: #0056b3;
-      }      
+  
+      .hero-text .btn {
+        padding: 12px 30px;
+        background-color: #222;
+        color: #fff;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      }
+  
+      .hero-text .btn:hover {
+        background-color: #ff4d4d;
+      }
+  
+      .hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+  
+      .hero-image img {
+        max-width: 90%;
+        border-radius: 10px;
+      }
+  
+      @media (max-width: 768px) {
+        .hero-section {
+          flex-direction: column;
+          text-align: center;
+        }
+  
+        .hero-image {
+          margin-top: 30px;
+        }
+      }
+ 
